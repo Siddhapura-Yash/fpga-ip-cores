@@ -25,9 +25,10 @@ The design supports configurable parameters:
 
 The simulation waveform shows the working of the MAC unit. It verifies multiplication of input data with weights and accumulation of all results to generate the final output.
 
-![Output Waveform](images/output_waveform.png)
+![Output Waveform](images/output.png)
 
 ## Note
 
 This implementation was created based on the requirements of one of my designs. Modify the accumulation stage if more or fewer operations are required.
+
 
