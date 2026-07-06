@@ -24,9 +24,10 @@ Only these parameters need to be configured before using the module.
 
 The simulation waveform shows the working of the line buffer and control logic. It verifies pixel storage, buffer switching, and generation of the 2x2 kernel window.
 
-![Output Waveform](images/output_waveform.png)
+![Output Waveform](images/output.png)
 
 ## Note
 
 This implementation is designed specifically for a **2x2 kernel**. The buffer structure and control logic were created based on the requirements of one of my designs, so modifications may be needed for other kernel sizes or architectures.
+
 
