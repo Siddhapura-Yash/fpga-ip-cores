@@ -55,3 +55,8 @@ The design was synthesized and tested on the Efinix Trion T120 FPGA.
 | DEPTH = 8, DATA_WIDTH = 8      |   153.257 MHz |
 | DEPTH = 16384, DATA_WIDTH = 64 |   122.579 MHz |
 
+---
+
+## Notes
+
+This FIFO IP is fully parameterized, easy to integrate into FPGA designs, and has been verified through simulation and hardware testing on the Efinix Trion T120 FPGA.
