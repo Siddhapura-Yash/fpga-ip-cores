@@ -28,8 +28,8 @@
 module sync_fifo #(
   parameter DATA_WIDTH = 4, 
   parameter DEPTH = 4,
-  parameter PROG_FULL_VALUE = 3, 
-  parameter PROG_EMPTY_VALUE = 1,
+  parameter PROG_FULL_VALUE = (DEPTH/2) - 1, 
+  parameter PROG_EMPTY_VALUE = (DEPTH/2) + 1,
   parameter MODE = 1,
   parameter PTR_WIDTH = $clog2(DEPTH)
 ) (
