@@ -64,4 +64,3 @@ The design was synthesized and tested on the Efinix Trion T120 FPGA.
 ## Notes
 
 This FIFO IP is fully parameterized, easy to integrate into FPGA designs using the `async_top.v` module, and has been verified through simulation and hardware testing on the Efinix Trion T120 FPGA.
-```
