@@ -1,6 +1,6 @@
 module mac #(
     parameter DATA_WIDTH = 8, 
-    KERNEL_SIZE = 3
+    parameter KERNEL_SIZE = 3
 )(
     input                                                   clk,
     input                                                   rst,
