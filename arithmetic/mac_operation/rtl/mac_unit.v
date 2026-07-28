@@ -1,19 +1,23 @@
-module mac #(parameter DATA_WIDTH = 8, KERNEL_SIZE = 3)(
-    input clk,
-    input rst,
-    input [DATA_WIDTH*KERNEL_SIZE*KERNEL_SIZE-1:0]data_in,
-    input signed [DATA_WIDTH*KERNEL_SIZE*KERNEL_SIZE-1:0]weight,
-    input data_in_valid,
+module mac #(
+    parameter DATA_WIDTH = 8, 
+    KERNEL_SIZE = 3
+)(
+    input                                                   clk,
+    input                                                   rst,
+    input        [DATA_WIDTH*KERNEL_SIZE*KERNEL_SIZE-1:0]   data_in,
+    input signed [DATA_WIDTH*KERNEL_SIZE*KERNEL_SIZE-1:0]   weight,
+    input                                                   data_in_valid,
 
-    output reg signed [19:0]data_out,
-    output reg data_out_valid
+    output reg signed [19:0]                                data_out,
+    output reg                                              data_out_valid
 );
 
 (* ram_style = "block" *)
 reg signed [19:0]temp[0:KERNEL_SIZE*KERNEL_SIZE-1];
 
-//multiply weight and pixel value
+/* multiply weight and pixel value */
 integer i;
+
 always@(*)
 begin
     if(data_in_valid)
