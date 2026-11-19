@@ -1,3 +1,28 @@
+/*
+  Configurable SYNCHRONOUS FIFO IP
+
+  Supported Modes:
+
+  MODE = 0 : FWFT (First Word Fall Through)
+              Data is available at the output without asserting read enable.
+
+  MODE = 1 : Standard FIFO
+              Data is available only after read enable is asserted.
+
+
+  Reset:
+
+  rst_n_i is an active-low synchronous reset.
+  
+
+  Configurable Parameters:
+
+  DEPTH            : FIFO depth
+  DATA_WIDTH       : Data width
+
+  These parameters can be changed according to your application requirements.
+*/
+
 module sync_fifo #(
     parameter int unsigned DATA_WIDTH   = 8,
     parameter int unsigned DEPTH        = 8,

@@ -12,7 +12,7 @@
 
   Reset:
 
-  rst_n is an active-low reset (negedge rst_n).
+  rst_n_i is an active-low synchronous reset.
 
 
   Configurable Parameters:
